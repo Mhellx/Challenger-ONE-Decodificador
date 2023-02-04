@@ -1,0 +1,130 @@
+body {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    height: 560px;
+    background-color: #202023;
+    margin: 0 auto;
+}
+
+.texto {
+    width: 60%;
+    margin: 20px auto;
+    margin-left: 5%;
+    height: 450px;
+    display: inline-block;
+}
+
+textarea {
+    background-color: #202023;
+    border: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 20px;
+    height: 95%;
+    resize: none;
+}
+
+#texto {
+    width: 80%;
+}
+
+#resultado {
+    width: 80%;
+    background-color: white;
+    color: #202023;
+}
+
+#texto::placeholder {
+    color: white;
+}
+
+#resultado::placeholder {
+    color: #202023;
+}
+
+textarea:focus {
+    outline: 0;
+}
+
+.resultado {
+    width: 30%;
+    margin: 20px auto;
+    height: 450px;
+    display: inline-block;
+}
+
+button {
+    width: 41.4%;
+    margin: 10px 15px 10px 0;
+    height: 40px;
+    background-color: #202023;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+#copiar {
+    margin-left: 22px;
+    width: 80%;
+}
+
+button:hover {
+    background-color: white;
+    color:#202023;
+    transform: scale(1.08);
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: white;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: #202023;
+    }
+
+    main {
+        height: 650px;
+    }
+
+    .texto, .buttons, .resultado {
+        width: auto;
+        height: 200px;
+        display: block;
+        margin-left: 5%;
+    }
+
+    button {
+        width: 91%;
+    }
+
+    #copiar {
+        margin-left: 0;
+        width: 91%;
+    }
+
+    .resultado {
+        margin-top: 180px;
+    }
+
+    #texto {
+        width: 80%;
+    }
+
+    #resultado {
+        width: 80%;
+        height: 150px;
+    }
+}
